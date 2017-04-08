@@ -1,0 +1,32 @@
+{
+  "name": "wueason/icapture",
+  "description": "A PHP Class to interact with PhantomJs and capture screenshot of a webpage",
+  "keywords": [
+    "service",
+    "phantomjs",
+    "screen",
+    "capture",
+    "print-screen"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Eason Wu",
+      "email": "eason991@gmail.com"
+    }
+  ],
+  "require": {
+    "chrisboulton/php-resque": "1.2.x",
+    "microweber/screen": "1.0.x"
+  },
+  "autoload": {
+    "psr-4": {
+      "Icapture\\": "src/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "chmod +x service/serviceUp.sh"
+    ]
+  }
+}
